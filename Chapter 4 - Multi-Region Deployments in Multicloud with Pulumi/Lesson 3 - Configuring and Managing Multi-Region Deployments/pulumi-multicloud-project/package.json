@@ -1,0 +1,13 @@
+{
+    "name": "multicloud-with-parent",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^6.48.0",
+        "@pulumi/azure-native": "^2.55.0",
+        "@pulumi/pulumi": "^3.113.0"
+    }
+}

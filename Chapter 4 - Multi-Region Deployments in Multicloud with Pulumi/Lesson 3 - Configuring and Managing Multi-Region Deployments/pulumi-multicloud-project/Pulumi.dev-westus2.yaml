@@ -1,0 +1,3 @@
+config:
+  dev-westus2:cloud: aws
+  dev-westus2:region: us-west-2

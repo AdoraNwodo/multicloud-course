@@ -1,0 +1,275 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2024-08-10T08:04:53.345042+01:00",
+            "magic": "8c374c94c920bcfbf914f08593ea05310fc69b093886c62da495b87b1d15ee83",
+            "version": "v3.83.0"
+        },
+        "secrets_providers": {
+            "type": "service",
+            "state": {
+                "url": "https://api.pulumi.com",
+                "owner": "adorahack",
+                "project": "pulumi-multicloud-state-project",
+                "stack": "dev"
+            }
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:pulumi:Stack::pulumi-multicloud-state-project-dev",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "created": "2024-08-10T06:46:02.651456Z",
+                "modified": "2024-08-10T06:46:02.651456Z",
+                "sourcePosition": "project:///../../../../../../Documents/source/multicloud/Chapter%203%20-%20Pulumi%20Basics%20for%20Multicloud%20IaC/Lesson%205%20-%20Remote%20State%20Management%20with%20Pulumi/pulumi-multicloud-state-project/node_modules/@pulumi/runtime/stack.ts#38,23"
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:providers:azure-native::azure",
+                "custom": true,
+                "id": "30ffc117-6dca-4932-90aa-5b6da77ae63b",
+                "type": "pulumi:providers:azure-native",
+                "inputs": {
+                    "environment": "public",
+                    "location": "WestUS",
+                    "useMsi": "false",
+                    "useOidc": "false",
+                    "version": "2.55.0"
+                },
+                "outputs": {
+                    "environment": "public",
+                    "location": "WestUS",
+                    "useMsi": "false",
+                    "useOidc": "false",
+                    "version": "2.55.0"
+                },
+                "parent": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:pulumi:Stack::pulumi-multicloud-state-project-dev",
+                "propertyDependencies": {
+                    "environment": null,
+                    "location": null,
+                    "useMsi": null,
+                    "useOidc": null
+                },
+                "created": "2024-08-10T06:46:05.785589Z",
+                "modified": "2024-08-10T06:46:05.785589Z",
+                "sourcePosition": "project:///../../../../../../Documents/source/multicloud/Chapter%203%20-%20Pulumi%20Basics%20for%20Multicloud%20IaC/Lesson%205%20-%20Remote%20State%20Management%20with%20Pulumi/pulumi-multicloud-state-project/node_modules/@pulumi/provider.ts#57,9"
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:resources:ResourceGroup::resourceGroup",
+                "custom": true,
+                "id": "/subscriptions/6cb97740-8774-4294-aa08-5ae2e9275d84/resourceGroups/my-resource-group",
+                "type": "azure-native:resources:ResourceGroup",
+                "inputs": {
+                    "location": "WestUS",
+                    "resourceGroupName": "my-resource-group"
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAI/m7HgFTtLmnJzhedlfynGBmDpYdNMETdI4kFssVKtYedAYY8QGZrIW1d9SzMaemqKKwmHlRWBGc9HT6T1vshyNJdJRO0nPMxbRjt/8nemAZcMtcor0kcUP"
+                    },
+                    "id": "/subscriptions/6cb97740-8774-4294-aa08-5ae2e9275d84/resourceGroups/my-resource-group",
+                    "location": "westus",
+                    "name": "my-resource-group",
+                    "properties": {
+                        "provisioningState": "Succeeded"
+                    },
+                    "type": "Microsoft.Resources/resourceGroups"
+                },
+                "parent": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:pulumi:Stack::pulumi-multicloud-state-project-dev",
+                "provider": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:providers:azure-native::azure::30ffc117-6dca-4932-90aa-5b6da77ae63b",
+                "propertyDependencies": {
+                    "location": null,
+                    "resourceGroupName": null
+                },
+                "created": "2024-08-10T06:46:10.216417Z",
+                "modified": "2024-08-10T06:46:10.216417Z",
+                "sourcePosition": "project:///../../../../../../Documents/source/multicloud/Chapter%203%20-%20Pulumi%20Basics%20for%20Multicloud%20IaC/Lesson%205%20-%20Remote%20State%20Management%20with%20Pulumi/pulumi-multicloud-state-project/index.ts#7,23"
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:storage:StorageAccount::adstorageacc",
+                "custom": true,
+                "id": "/subscriptions/6cb97740-8774-4294-aa08-5ae2e9275d84/resourceGroups/my-resource-group/providers/Microsoft.Storage/storageAccounts/adstorageacc5a22b96b",
+                "type": "azure-native:storage:StorageAccount",
+                "inputs": {
+                    "__createBeforeDelete": true,
+                    "accountName": "adstorageacc5a22b96b",
+                    "enableHttpsTrafficOnly": false,
+                    "isHnsEnabled": true,
+                    "kind": "BlockBlobStorage",
+                    "location": "westus",
+                    "resourceGroupName": "my-resource-group",
+                    "sku": {
+                        "name": "Premium_LRS"
+                    }
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAHVhn66nmshEwVn1GwFV1aSgl9Lz8BMHfhFmQ3HKc7T57QHaABMsQEXkr2B5rq35hc0D2ahEyBEmEIEemmty6VqNrWPHBFDlQKEz6F5t3r7k0rw5CTuTHYxHdVVa9F7rfFPytOySsb2SVwvLJwh9afOrQk4FV4OFUX3eZ+UZDTlZ2Zx7jRAiLPcZDswp6fGfMDnEY5+GGd71VnKGvPweOpZXAp+HbZigb029RO0djlNo4MNrmtdWAY353FqctU6OvrLvl/MukKiqmfUNynvE2C9T+oJxJVl6HtLi91bvX7lvM6U9dl5QGn9/U/Gd0GVGNnrAYZq14ZLh3IwKPW0ilOXXDLrx"
+                    },
+                    "allowBlobPublicAccess": false,
+                    "allowCrossTenantReplication": false,
+                    "creationTime": "2024-08-10T06:46:13.0090758Z",
+                    "enableHttpsTrafficOnly": false,
+                    "encryption": {
+                        "keySource": "Microsoft.Storage",
+                        "services": {
+                            "blob": {
+                                "enabled": true,
+                                "keyType": "Account",
+                                "lastEnabledTime": "2024-08-10T06:46:13.1184486Z"
+                            },
+                            "file": {
+                                "enabled": true,
+                                "keyType": "Account",
+                                "lastEnabledTime": "2024-08-10T06:46:13.1184486Z"
+                            }
+                        }
+                    },
+                    "id": "/subscriptions/6cb97740-8774-4294-aa08-5ae2e9275d84/resourceGroups/my-resource-group/providers/Microsoft.Storage/storageAccounts/adstorageacc5a22b96b",
+                    "isHnsEnabled": true,
+                    "keyCreationTime": {
+                        "key1": "2024-08-10T06:46:13.1184486Z",
+                        "key2": "2024-08-10T06:46:13.1184486Z"
+                    },
+                    "kind": "BlockBlobStorage",
+                    "location": "westus",
+                    "minimumTlsVersion": "TLS1_0",
+                    "name": "adstorageacc5a22b96b",
+                    "networkRuleSet": {
+                        "bypass": "AzureServices",
+                        "defaultAction": "Allow",
+                        "ipRules": [],
+                        "virtualNetworkRules": []
+                    },
+                    "primaryEndpoints": {
+                        "blob": "https://adstorageacc5a22b96b.blob.core.windows.net/",
+                        "dfs": "https://adstorageacc5a22b96b.dfs.core.windows.net/",
+                        "web": "https://adstorageacc5a22b96b.z22.web.core.windows.net/"
+                    },
+                    "primaryLocation": "westus",
+                    "privateEndpointConnections": [],
+                    "provisioningState": "Succeeded",
+                    "sku": {
+                        "name": "Premium_LRS",
+                        "tier": "Premium"
+                    },
+                    "statusOfPrimary": "available",
+                    "tags": {},
+                    "type": "Microsoft.Storage/storageAccounts"
+                },
+                "parent": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:pulumi:Stack::pulumi-multicloud-state-project-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:resources:ResourceGroup::resourceGroup"
+                ],
+                "provider": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:providers:azure-native::azure::30ffc117-6dca-4932-90aa-5b6da77ae63b",
+                "propertyDependencies": {
+                    "enableHttpsTrafficOnly": null,
+                    "isHnsEnabled": null,
+                    "kind": null,
+                    "location": [
+                        "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:resources:ResourceGroup::resourceGroup"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:resources:ResourceGroup::resourceGroup"
+                    ],
+                    "sku": null
+                },
+                "sourcePosition": "project:///../../../../../../Documents/source/multicloud/Chapter%203%20-%20Pulumi%20Basics%20for%20Multicloud%20IaC/Lesson%205%20-%20Remote%20State%20Management%20with%20Pulumi/pulumi-multicloud-state-project/index.ts#11,24"
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:storage:StorageAccount::pustorageacc",
+                "custom": true,
+                "id": "/subscriptions/6cb97740-8774-4294-aa08-5ae2e9275d84/resourceGroups/my-resource-group/providers/Microsoft.Storage/storageAccounts/pustorageacc059204e8",
+                "type": "azure-native:storage:StorageAccount",
+                "inputs": {
+                    "__createBeforeDelete": true,
+                    "accountName": "pustorageacc059204e8",
+                    "enableHttpsTrafficOnly": false,
+                    "isHnsEnabled": true,
+                    "kind": "BlockBlobStorage",
+                    "location": "westus",
+                    "resourceGroupName": "my-resource-group",
+                    "sku": {
+                        "name": "Premium_LRS"
+                    }
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAFKp/MRmAMFl9aEB3vTGjSQVhfEKyBCdBerMOXcEcd36dL3EyvRdDve1C1MTJ6/HEEXeQuC95mM1P+encJWJcgxIWwabiDxzF8dPGd32xFo8K8sTquuILDvdmhrJWOgYJmkzp+bX+KuoX9X2CKu9wJCPy5Os4919JV4E30hQTevRZpsdGnForfoHUEJRLVfPsoGwgcnYxZM2Dhcpf8RJWc36L+K2l6/eUiIha1aD1jWlrSiwSNPLdHvuc7j4HZGHzWCM+JXuDdeALYelCWByTvgr1bBois4LVg0BrEoz57qtv97pVarvbD+G4qT49hxLIVU6e6L79m2jMrCL7VDbd8iCFN1m"
+                    },
+                    "allowBlobPublicAccess": false,
+                    "allowCrossTenantReplication": false,
+                    "creationTime": "2024-08-10T07:04:32.3352586Z",
+                    "enableHttpsTrafficOnly": false,
+                    "encryption": {
+                        "keySource": "Microsoft.Storage",
+                        "services": {
+                            "blob": {
+                                "enabled": true,
+                                "keyType": "Account",
+                                "lastEnabledTime": "2024-08-10T07:04:32.4446847Z"
+                            },
+                            "file": {
+                                "enabled": true,
+                                "keyType": "Account",
+                                "lastEnabledTime": "2024-08-10T07:04:32.4446847Z"
+                            }
+                        }
+                    },
+                    "id": "/subscriptions/6cb97740-8774-4294-aa08-5ae2e9275d84/resourceGroups/my-resource-group/providers/Microsoft.Storage/storageAccounts/pustorageacc059204e8",
+                    "isHnsEnabled": true,
+                    "keyCreationTime": {
+                        "key1": "2024-08-10T07:04:32.4446847Z",
+                        "key2": "2024-08-10T07:04:32.4446847Z"
+                    },
+                    "kind": "BlockBlobStorage",
+                    "location": "westus",
+                    "minimumTlsVersion": "TLS1_0",
+                    "name": "pustorageacc059204e8",
+                    "networkRuleSet": {
+                        "bypass": "AzureServices",
+                        "defaultAction": "Allow",
+                        "ipRules": [],
+                        "virtualNetworkRules": []
+                    },
+                    "primaryEndpoints": {
+                        "blob": "https://pustorageacc059204e8.blob.core.windows.net/",
+                        "dfs": "https://pustorageacc059204e8.dfs.core.windows.net/",
+                        "web": "https://pustorageacc059204e8.z22.web.core.windows.net/"
+                    },
+                    "primaryLocation": "westus",
+                    "privateEndpointConnections": [],
+                    "provisioningState": "Succeeded",
+                    "sku": {
+                        "name": "Premium_LRS",
+                        "tier": "Premium"
+                    },
+                    "statusOfPrimary": "available",
+                    "tags": {},
+                    "type": "Microsoft.Storage/storageAccounts"
+                },
+                "parent": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:pulumi:Stack::pulumi-multicloud-state-project-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:resources:ResourceGroup::resourceGroup"
+                ],
+                "provider": "urn:pulumi:dev::pulumi-multicloud-state-project::pulumi:providers:azure-native::azure::30ffc117-6dca-4932-90aa-5b6da77ae63b",
+                "propertyDependencies": {
+                    "enableHttpsTrafficOnly": null,
+                    "isHnsEnabled": null,
+                    "kind": null,
+                    "location": [
+                        "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:resources:ResourceGroup::resourceGroup"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::pulumi-multicloud-state-project::azure-native:resources:ResourceGroup::resourceGroup"
+                    ],
+                    "sku": null
+                },
+                "sourcePosition": "project:///../../../../../../Documents/source/multicloud/Chapter%203%20-%20Pulumi%20Basics%20for%20Multicloud%20IaC/Lesson%205%20-%20Remote%20State%20Management%20with%20Pulumi/pulumi-multicloud-state-project/index.ts#21,25"
+            }
+        ]
+    }
+}

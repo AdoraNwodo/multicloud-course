@@ -1,0 +1,3 @@
+config:
+  dev-eastus:cloud: aws
+  dev-eastus:region: us-east-1

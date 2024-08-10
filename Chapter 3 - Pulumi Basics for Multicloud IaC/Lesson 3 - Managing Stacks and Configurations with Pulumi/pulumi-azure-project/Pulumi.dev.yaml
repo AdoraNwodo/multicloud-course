@@ -1,0 +1,3 @@
+config:
+  azure-native:location: WestUS2
+  stacks-and-configs:location: westus

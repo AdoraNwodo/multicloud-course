@@ -1,0 +1,3 @@
+config:
+  dev-westeurope:cloud: azure
+  dev-westeurope:region: westeurope

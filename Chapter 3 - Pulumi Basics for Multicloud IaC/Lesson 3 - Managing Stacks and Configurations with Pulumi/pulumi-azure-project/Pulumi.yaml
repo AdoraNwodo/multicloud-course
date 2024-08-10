@@ -1,0 +1,3 @@
+name: stacks-and-configs
+runtime: nodejs
+description: A minimal Azure Native TypeScript Pulumi program

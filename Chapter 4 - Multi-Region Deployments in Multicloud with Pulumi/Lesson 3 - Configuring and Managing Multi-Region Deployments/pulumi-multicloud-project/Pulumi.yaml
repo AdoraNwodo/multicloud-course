@@ -1,0 +1,3 @@
+name: multicloud-with-parent
+runtime: nodejs
+description: A minimal TypeScript Pulumi program
